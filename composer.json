@@ -1,0 +1,8 @@
+{
+    "name": "anas/task_2_web",
+    "description": "submission 2 web",
+    "type": "project",
+    "require": {
+        "silex/silex": "^2.3"
+    }
+}
