@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Form Personal Information">
+  <title>Personal Information</title>
+  <link rel="stylesheet" href="public/styles/index.css">
+</head>
+<body>
+  <form action="public/personal.php" method="POST">
+    <header>
+      <h1>Personal Information</h1>
+    </header>
+    <main>
+      <section>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" pattern="[a-zA-Z]*" required autofocus>
+      </section>
+      <section>
+        <label for="nim">NIM</label>
+        <input type="number" name="nim" id="nim" placeholder="Your NIM" required>
+      </section>
+      <section>
+        <label for="faculty">Faculty</label>
+        <select name="faculty" id="faculty" required>
+          <option selected disabled>Select Faculty</option>
+          <option>Syariah & Hukum</option>
+          <option>Ekonomi & Bisnis Islam</option>
+          <option>Tarbiyah & Keguruan</option>
+          <option>Ushuluddin & Filsafat</option>
+          <option>Dakwah & Komunikasi</option>
+          <option>Adab & Humaniora</option>
+          <option>Sains & Teknologi</option>
+          <option>Kedokteran & Ilmu Kesehatan</option>
+        </select>
+      </section>
+      <section>
+        <label for="study-program">Study Program</label>
+        <select name="study program" id="study-program" required>
+          <option selected disabled>Select Study Program</option>
+          <option>Peternakan</option>
+          <option>Kimia</option>
+          <option>Fisika</option>
+          <option>Biologi</option>
+          <option>Sistem Informasi</option>
+          <option>Matematika</option>
+          <option>Perencanaan Wilayah dan Kota</option>
+          <option>Teknik Arsitektur</option>
+          <option>Teknik Informatika</option>
+        </select>
+      </section>
+      <section>
+        <h2>Status Akademik</h2>
+        <div>
+          <input id="aktif" type="radio" value="Aktif" name="academic status" required>
+          <label for="aktif">Aktif</label>
+        </div>
+        <div>
+          <input id="lulus" type="radio" value="Lulus" name="academic status">
+          <label for="lulus">Lulus</label>
+        </div>
+        <div>
+          <input id="non-aktif" type="radio" value="Non Aktif" name="academic status">
+          <label for="non-aktif">Non Aktif</label>
+        </div>
+        <div>
+          <input id="dropout" type="radio" value="Dropout" name="academic status">
+          <label for="dropout">Dropout</label>
+        </div>
+      </section>
+      <section>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </section>
+    </main>
+  </form>
+</body>
+</html>
