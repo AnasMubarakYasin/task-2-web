@@ -21,7 +21,7 @@ if (count($_POST) === 5) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal Information">
   <title>Your Personal Information</title>
-  <link rel="stylesheet" href="styles/personal.css">
+  <link rel="stylesheet" href="../styles/personal.css">
 </head>
 <body>
   <main>
