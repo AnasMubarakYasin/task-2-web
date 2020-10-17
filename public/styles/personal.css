@@ -1,0 +1,119 @@
+:root {
+  --primary-color: teal;
+  --secondary-color: royalblue;
+  --surface-color: white;
+  --background-color:  rgb(250, 250, 250);
+  --on-primary-color: white;
+  --on-secondary-color: white;
+  --on-surface-color: black;
+  --on-background-color: black;
+  --lighten-gray-1: #eeeeee;
+  --lighten-gray-2: #e7e6e6;
+  --darken-gray-1: #757575;
+  --darken-red-1: #F44336;
+  --min-size-accessibility: 44px;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 16px 0;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  background-color: var(--background-color);
+}
+
+main {
+  min-width: 90%;
+  margin: auto;
+  box-shadow: 4px 4px 8px 0px var(--lighten-gray-2), -4px 4px 8px 0px var(--lighten-gray-2);
+}
+
+header {
+  padding: 32px;
+  background-color: var(--primary-color);
+  border-radius: 8px 8px 0 0;
+}
+
+header > h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--on-primary-color);
+  text-align: center;
+}
+
+header + main {
+  display: flex;
+  flex-flow: column wrap;
+  width: auto;
+  margin: 0;
+  padding: 16px;
+  background-color: var(--surface-color);
+  border-radius: 0 0 8px 8px;
+}
+
+section:nth-child(1) {
+  padding: 0 8px;
+}
+
+section:nth-child(2) {
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  -moz-row-gap: 8px;
+       row-gap: 8px;
+  padding: 8px 12px;
+  background-color: var(--lighten-gray-1);
+  border-radius: 6px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+h2 {
+  margin: 4px 0 12px;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: .7;
+}
+
+h3 {
+  margin: 4px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: .7;
+}
+
+
+@media only screen and (min-width: 601px) {
+  main {
+    min-width: 75%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    min-width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    min-width: 40%;
+  }
+}
