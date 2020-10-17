@@ -8,7 +8,7 @@ $otherInformation = array(
 
 $isComplete = false;
 
-if (count($otherInformation) === 5) {
+if (count($_POST) === 5) {
   $isComplete = true;
 }
 
