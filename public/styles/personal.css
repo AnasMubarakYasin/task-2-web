@@ -99,6 +99,32 @@ h4 {
   opacity: .7;
 }
 
+span {
+  display: block;
+  margin: 32px auto;
+  padding: 16px;
+  color: white;
+  background-color: var(--darken-red-1);
+}
+
+button, a {
+  padding: 16px 32px;
+  min-width: var(--min-size-accessibility);
+  min-height: var(--min-size-accessibility);
+  color: var(--on-surface-color);
+  background-color: transparent;
+  border-radius: 8px;
+  border: thin var(--lighten-gray-2) solid;
+  text-align: center;
+}
+
+button:hover, a:hover {
+  background-color: var(--lighten-gray-2);
+}
+
+a {
+  min-height: auto;
+}
 
 @media only screen and (min-width: 601px) {
   main {
