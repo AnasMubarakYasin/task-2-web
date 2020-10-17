@@ -15,7 +15,7 @@
     <main>
       <section>
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Your Name" pattern="[a-zA-Z]*" required autofocus>
+        <input type="text" name="name" id="name" placeholder="Your Name" pattern="\D*" required autofocus>
       </section>
       <section>
         <label for="nim">NIM</label>
@@ -37,7 +37,7 @@
       </section>
       <section>
         <label for="study-program">Study Program</label>
-        <select name="study program" id="study-program" required>
+        <select name="study" id="study-program" required>
           <option selected disabled>Select Study Program</option>
           <option>Peternakan</option>
           <option>Kimia</option>
@@ -53,25 +53,25 @@
       <section>
         <h2>Status Akademik</h2>
         <div>
-          <input id="aktif" type="radio" value="Aktif" name="academic status" required>
+          <input id="aktif" type="radio" value="Aktif" name="status" required>
           <label for="aktif">Aktif</label>
         </div>
         <div>
-          <input id="lulus" type="radio" value="Lulus" name="academic status">
+          <input id="lulus" type="radio" value="Lulus" name="status">
           <label for="lulus">Lulus</label>
         </div>
         <div>
-          <input id="non-aktif" type="radio" value="Non Aktif" name="academic status">
+          <input id="non-aktif" type="radio" value="Non Aktif" name="status">
           <label for="non-aktif">Non Aktif</label>
         </div>
         <div>
-          <input id="dropout" type="radio" value="Dropout" name="academic status">
+          <input id="dropout" type="radio" value="Dropout" name="status">
           <label for="dropout">Dropout</label>
         </div>
       </section>
       <section>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <button type="submit">Save</button>
+        <button type="reset">Cancle</button>
       </section>
     </main>
   </form>
