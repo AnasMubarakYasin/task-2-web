@@ -29,7 +29,7 @@ body {
 
 main {
   min-width: 90%;
-  margin: auto;
+  margin: 8px;
   box-shadow: 4px 4px 8px 0px var(--lighten-gray-2), -4px 4px 8px 0px var(--lighten-gray-2);
 }
 
@@ -108,7 +108,7 @@ span {
 }
 
 button, a {
-  padding: 16px 32px;
+  padding: 8px 16px;
   min-width: var(--min-size-accessibility);
   min-height: var(--min-size-accessibility);
   color: var(--on-surface-color);
@@ -123,7 +123,9 @@ button:hover, a:hover {
 }
 
 a {
+  min-width: auto;
   min-height: auto;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 601px) {
