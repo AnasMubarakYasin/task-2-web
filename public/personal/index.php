@@ -54,6 +54,6 @@ if (count($_POST) === 5) {
   </main>
 </body>
 <script>
-    console.log(`<?= print_r($_POST); ?>`);
+    console.log(`<?php print_r($_POST); ?>`);
 </script>
 </html>
