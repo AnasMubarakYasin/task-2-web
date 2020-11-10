@@ -1,6 +1,4 @@
-<?php 
-
-$otherInformation = array(
+<?php $otherInformation = array(
   'Faculty' => 'faculty',
   'Study Program' => 'study',
   'Status Akademik' => 'status'
@@ -9,7 +7,7 @@ $otherInformation = array(
 $isComplete = false;
 
 if (count($_POST) === 5) {
-  $isComplete = true;
+    $isComplete = true;
 }
 
 ?>
@@ -29,18 +27,18 @@ if (count($_POST) === 5) {
       <h1>Personal Information</h1>
     </header>
     <main>
-      <?php if($isComplete) { ?>
+      <?php if ($isComplete) { ?>
         <section>
           <h1><?= $_POST['name'] ?></h1>
           <h2><?= $_POST['nim'] ?></h2>
         </section>
         <section>
-          <?php foreach ($otherInformation as $key => $value) { ?>
-            <div>
-              <h4><?= $key; ?></h4>
-              <h3><?= $_POST[$value]; ?></h3>
-            </div>
-          <?php } ?>
+            <?php foreach ($otherInformation as $key => $value) { ?>
+              <div>
+                <h4><?= $key; ?></h4>
+                <h3><?= $_POST[$value]; ?></h3>
+              </div>
+            <?php } ?>
         </section>
       <?php } else { ?>
         <span>

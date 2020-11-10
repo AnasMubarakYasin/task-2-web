@@ -1,5 +1,1 @@
-<?php 
-
-require('views/index.html');
-
-?>
+<?php require('views/index.html');
